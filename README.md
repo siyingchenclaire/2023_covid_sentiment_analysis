@@ -1,8 +1,5 @@
-# 2023_covid_sentiment_analysis
+# Sentiment Analysis on tweets related to the COVID-19
 final project for the course "Applied Machine Learning"
-
-# DDA3010: Group Project Report
-## Sentiment Analysis on tweets related to the COVID-19
 
 ## 1. Dataset Description
 
