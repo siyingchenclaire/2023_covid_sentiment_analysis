@@ -90,13 +90,16 @@ WCSS vs. K Plot (PCA): ![wcss_kplot_pca](./static/wcss_kplot_pca.png)
 
 With K=3, the Rand Index was 0.3771580152, indicating dissimilarity from the sentiment classification. Word clouds and centroid representatives were then examined.
 
-Cluster 0 Word Cloud (PCA): ![cluster0](./static/cluster0.png)
-Cluster 1 Word Cloud (PCA): ![cluster1](./static/cluster1.png)
-Cluster 2 Word Cloud (PCA): ![cluster2](./static/cluster2.png)
+Cluster 1 Word Cloud (PCA): ![cluster0](./static/cluster0_pca.png)
 
-Centroid Examples (K=3, with PCA):
 Centroid 1: What is this creature?
+
+Cluster 2 Word Cloud (PCA): ![cluster1](./static/cluster1_pca.png)
+
 Centroid 2: Infected > 110,000 people At least 110 countries > 4,000 people have died Declining oil prices Stock market rout Lower bond yields #sensex #StockMarketCrash2020 #nifty #Covid_19 #CoronavirusPandemic #coronavirusinindia Ye Mumbai ki upper class families ko sab kuch hoard karne ka kya shauk hai?
+
+Cluster 3 Word Cloud (PCA): ![cluster2](./static/cluster2_pca.png)
+
 Centroid 3: Local grocery stores as well as Bigbasket running out of the very basic food items (includes bread and eggs) is my first personal real panic since covid-19 hit
 
 Word cloud generation showed issues; Clusters 0 and 2 had significantly fewer words than Cluster 1, despite a top 100 limit, due to only 1 data point in each of the former. This imbalance was attributed to inherent data distribution, random centroid initialization, and a non-optimal K value. Attempts to resolve this by removing PCA or changing centroid initialization were unsuccessful. Preprocessing with ANOVA ultimately improved the result. The second condition (standardization only) yielded poor clustering with highly imbalanced clusters, limiting further exploration.
@@ -109,25 +112,39 @@ WCSS vs. K Plot (ANOVA): ![wcss_kplot_anova](./static/wcss_kplot_anova.png)
 When K=3, the Rand Index was 0.4659523753058559, which, while not good, did not fully reflect clustering quality. Cluster sizes became more balanced: Cluster 0: 2963 data points; Cluster 1: 787 data points; Cluster 2: 48 data points. Given the dataset's inherent imbalance, no forced equalization of cluster sizes was applied. Word clouds and centroid representatives were then examined for meaning.
 
 Cluster 1 Word Cloud (ANOVA, K=3): ![cluster1_anova_3](./static/cluster1_anova.png)
+
+Centroid 1: Stock up on Food & Water asap before the forced quarantines for the deadly CoronaVirus. covid-19 covid19 stocks bonds silver gold slv gld intern nurse rn medstudent paramedic trucker patriot taxi prepper veteran hunter biker surfer bartender e3 eos bch xrp
+
 Cluster 2 Word Cloud (ANOVA, K=3): ![cluster2_anova_3](./static/cluster2_anova.png)
+
+Centroid 2: Yeah. I've seen eggs, milk & Lysol wipes being sold out at grocery store due 2 #Covid_19. Folks have gone nuts 2 & they need 2 calm down. This isn't the black plague.
+
 Cluster 3 Word Cloud (ANOVA, K=3): ![cluster3_anova_3](./static/cluster3_anova.png)
 
-Centroid Examples (K=3, with ANOVA):
-Centroid 1: Stock up on Food & Water asap before the forced quarantines for the deadly CoronaVirus. covid-19 covid19 stocks bonds silver gold slv gld intern nurse rn medstudent paramedic trucker patriot taxi prepper veteran hunter biker surfer bartender e3 eos bch xrp
-Centroid 2: Yeah. I've seen eggs, milk & Lysol wipes being sold out at grocery store due 2 #Covid_19. Folks have gone nuts 2 & they need 2 calm down. This isn't the black plague.
 Centroid 3: Nice long pause there. #douchebag #pricegouger At this point donating it to nursing homes,small biz, shelters, grocery store workers would probably be the right thing to do. Or I don’t know, maybe try to sell it for normal prices to recoup some $. #coronapocalypse #coronavirus
+
+
 
 When K=9, cluster sizes became more balanced: Cluster 0: 33 data points; Cluster 1: 39 data points; Cluster 2: 12 data points; Cluster 3: 486 data points; Cluster 4: 2663 data points; Cluster 5: 30 data points; Cluster 6: 411 data points; Cluster 7: 71 data points; Cluster 8: 53 data points. Word clouds and centroid representatives were generated to understand each cluster's meaning.
 
 Centroid Examples (K=9, with ANOVA):
+
 Centroid 1: Worried about coronavirus? You want to stock your pantry? Check out this guide about healthy #non_perishable_food. #CoronavirusPandemic #Covid_19 #non_perishable_foods_list #survival_food #non_perishables #non_expiring_food #emergency_food
+
 Centroid 2: Alright y’all I hope our Melanin prevails but just in case I took some precautions I had some food & water delivered. ????? I’ve had my masks for a month and may have to open soon! ?? #B1 #FBA #CoronavirusUSA #COVID
+
 Centroid 3: Call your Senators. Demand they pass the #FamiliesFirst #coronavirus bill containing: -Free testing -14 days paid sick leave -3 months paid family leave -Expanded unemployment insurance -Food security -Medicaid funds Ask for your senator’s office. (202) 224-3121 #COVID19
+
 Centroid 4: First time in 2 weeks that I have seen loo roll in a supermarket! So I bought a sensible quantity of 12! #CalamityCorona #Covid_19 #ToiletPaperApocalypse #stoppanicking
+
 Centroid 5: Stock up on Food & Water asap before the forced quarantines for the deadly CoronaVirus. covid-19 covid19 stocks bonds silver gold slv gld intern nurse rn medstudent paramedic trucker patriot taxi prepper veteran hunter biker surfer bartender e3 eos bch xrp
+
 Centroid 6: In these difficult times please consider donating to your local #FoodbankFriday As panic buys are causing a lot of shortages. Our Lady of Fatima, pray for us. #Covid_19 #Lent2020
+
 Centroid 7: Real talk though. Am I the only one spending hours a day online shopping for loungewear now that I don't have to get dressed for work or public consumption? #coronapocolypse #COVID19 #coronavirus #QuarantineLife
+
 Centroid 8: “We are disappointed that some sellers are attempting to artificially raise prices on basic need products during a global health crisis" #Corona #CoronaVirusUpdate #COVID2019 #handsanitizer
+
 Centroid 9: This weekend take a moment and #thank your #delivery drivers, #supermarket employees, #hospital workers & #pharmacy staff. They’re #stressed out but went to work to #serve you. #AllInThisTogether #Covid_19 #COVID19
 
 Word clouds and centroid representatives provided some unique insights, such as "panic buying," "food shortage," "coronavirus," and "unemployment," reflecting prevalent COVID-19 discussions. However, they were not fully satisfactory in clearly representing each cluster. The raw frequency-based word cloud generation metric may not be ideal for unique word representation. Centroid representatives were clearer but still require further evaluation of their representativeness.
