@@ -35,7 +35,7 @@ To classify the 3798 data points into sentiment groups, a supervised machine lea
     * **Standardization**: `StandardScaler` was applied to training and test data, resulting in 9524 features.
     * **PCA (Principal Component Analysis)**: After standardization, PCA reduced features to 1600. The number of components was chosen by setting an explained variance ratio threshold at 0.8.
 
-    PCA Explained Variance Ratio Plot: ![PCA result](./static/PCA.png.png)
+    PCA Explained Variance Ratio Plot: ![PCA result](./static/PCA.png)
 
     * **ANOVA (Analysis of Variance)**: Applied to original input data to reduce features to 1600, enabling a meaningful comparison with PCA. Data standardization using `StandardScaler` was also performed after ANOVA.
 
