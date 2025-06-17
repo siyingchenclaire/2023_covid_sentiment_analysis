@@ -93,7 +93,7 @@ With K=3, the Rand Index was 0.3771580152, indicating dissimilarity from the sen
 Cluster 1 Word Cloud (PCA): 
 ![cluster0](./static/cluster0_pca.png)
 
-Centroid 1: What is this creature?
+Centroid 1: What is this creature?-
 
 Cluster 2 Word Cloud (PCA): 
 ![cluster1](./static/cluster1_pca.png)
