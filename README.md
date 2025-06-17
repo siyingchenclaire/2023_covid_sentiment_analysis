@@ -90,15 +90,18 @@ WCSS vs. K Plot (PCA): ![wcss_kplot_pca](./static/wcss_kplot_pca.png)
 
 With K=3, the Rand Index was 0.3771580152, indicating dissimilarity from the sentiment classification. Word clouds and centroid representatives were then examined.
 
-Cluster 1 Word Cloud (PCA): ![cluster0](./static/cluster0_pca.png)
+Cluster 1 Word Cloud (PCA): 
+![cluster0](./static/cluster0_pca.png)
 
 Centroid 1: What is this creature?
 
-Cluster 2 Word Cloud (PCA): ![cluster1](./static/cluster1_pca.png)
+Cluster 2 Word Cloud (PCA): 
+![cluster1](./static/cluster1_pca.png)
 
 Centroid 2: Infected > 110,000 people At least 110 countries > 4,000 people have died Declining oil prices Stock market rout Lower bond yields #sensex #StockMarketCrash2020 #nifty #Covid_19 #CoronavirusPandemic #coronavirusinindia Ye Mumbai ki upper class families ko sab kuch hoard karne ka kya shauk hai?
 
-Cluster 3 Word Cloud (PCA): ![cluster2](./static/cluster2_pca.png)
+Cluster 3 Word Cloud (PCA): 
+![cluster2](./static/cluster2_pca.png)
 
 Centroid 3: Local grocery stores as well as Bigbasket running out of the very basic food items (includes bread and eggs) is my first personal real panic since covid-19 hit
 
